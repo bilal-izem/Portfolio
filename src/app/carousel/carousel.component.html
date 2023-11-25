@@ -1,0 +1,19 @@
+
+
+
+<carousel>
+
+    <slide *ngFor="let slide of slides; let index=index">
+      <div class="rounded border">
+        <img [src]="slide.image" style="display: block; width: 100%;" class="rounded-lg border-2" alt="first slide" style="display: block; width: 100%;">
+      </div>
+
+    <div class="carousel-caption">
+      <i class="{{slide.icon}} text-4xl"></i>
+      <h4 class="text-2xl font-bold tracking-widest">{{slide.title}}</h4>
+      <p>{{slide.text}}</p>
+    </div>
+  </slide>
+
+
+</carousel>

@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-body{
+  @apply flex flex-col gap-5;
+}
+.home{
+  @apply px-24 flex justify-center items-center py-14 bg-black text-white  ;
+
+}
+.button
+{
+  @apply px-5 py-2  transition duration-150 ease-in-out hover:shadow-md rounded bg-gray-400 hover:bg-gray-500 ;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+
+.card1{
+  @apply bg-white p-6 transition duration-300 transform hover:bg-gray-200 rounded-md flex flex-col gap-5;
+
+}
+
+.card1:hover > i:first-of-type {
+  color: rgb(172, 0, 172);
+  transition: 0.3s;
+}
+.card1:hover button {
+  background-color: rgb(172, 0, 172);
+  transition: 0.3s;
+  color:white;
+}
+
+
+
+.card2{
+  @apply bg-white p-6 transition duration-300 transform hover:bg-gray-200 rounded-md flex flex-col gap-5;
+
+}
+
+.card2:hover > i:first-of-type {
+  color: rgb(1, 162, 255);
+  transition: 0.3s;
+}
+.card2:hover button {
+  background-color: rgb(1, 162, 255);
+  transition: 0.3s;
+  color:white;
+}
+
+
+
+.card3{
+  @apply bg-white p-6 transition duration-300 transform hover:bg-gray-200 rounded-md flex flex-col gap-5;
+
+}
+
+.card3:hover > i:first-of-type {
+  color: rgb(25, 187, 0);
+  transition: 0.3s;
+}
+.card3:hover button {
+  background-color: rgb(25, 187, 0);
+  transition: 0.3s;
+  color:white;
+}
+
+.cardButton{
+  @apply mr-28 bottom-4 right-4 flex items-center py-2 px-4 rounded-md border transition duration-150 ease-in-out hover:shadow-md hover:-translate-y-1;
+}
+
